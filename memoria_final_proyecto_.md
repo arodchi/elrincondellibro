@@ -313,16 +313,6 @@ graph TB
 
 <img width="1536" height="1024" alt="Diagrama de arquitectura " src="https://github.com/user-attachments/assets/710105e0-6194-4523-8353-104187b07689" />
 
-Los elementos clave son:
-- `USUARIOS`: personas registradas, autores y lectores.  
-- `LIBROS`: obras publicadas por los usuarios.  
-- `CAPITULOS`: secciones de cada libro.  
-- `COMENTARIOS`: opiniones en capítulos y en comunidad.  
-- `SEGUIDORES`: relaciones sociales entre usuarios.  
-- `MENSAJES`: comunicaciones privadas.  
-- `NOTIFICACIONES`: alertas de actividad.  
-- `CAPITULOS_IMAGENES`: almacenamiento de imágenes asociadas a capítulos.
-
 ### 4.3. Modelo relacional tablas
 
 El modelo relacional se basa en una estructura normalizada que refleja la realidad de la aplicación y los datos que se capturan en las capturas.
