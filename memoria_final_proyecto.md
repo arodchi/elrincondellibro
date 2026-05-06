@@ -634,7 +634,6 @@ Para el desarrollo de este proyecto, se requieren los siguientes roles:
 | **Testing** | PHPUnit | Pruebas unitarias |
 | | Postman | Testing de APIs |
 | **Documentación** | Markdown | Documentación técnica |
-| | MkDocs | Generación de docs |
 
 ##### 5.8.6. Gestión de Riesgos
 
