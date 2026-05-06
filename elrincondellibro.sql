@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: db
--- Tiempo de generación: 04-05-2026 a las 15:11:10
+-- Tiempo de generación: 06-05-2026 a las 20:59:07
 -- Versión del servidor: 8.0.44
 -- Versión de PHP: 8.3.26
 
@@ -303,7 +303,17 @@ INSERT INTO `actividad` (`id_actividad`, `usuario_id`, `tipo`, `referencia_id`, 
 (261, 4, 'lectura_capitulo', 12, '2026-05-04 14:09:09'),
 (262, 4, 'lectura_capitulo', 12, '2026-05-04 14:09:14'),
 (263, 4, 'lectura_capitulo', 12, '2026-05-04 14:09:17'),
-(264, 4, 'lectura_capitulo', 12, '2026-05-04 14:09:46');
+(264, 4, 'lectura_capitulo', 12, '2026-05-04 14:09:46'),
+(265, 1, 'lectura_capitulo', 12, '2026-05-05 10:57:53'),
+(266, 1, 'lectura_capitulo', 12, '2026-05-05 10:58:43'),
+(267, 1, 'lectura_capitulo', 10, '2026-05-05 11:00:28'),
+(268, 1, 'lectura_capitulo', 6, '2026-05-05 11:04:58'),
+(269, 1, 'lectura_capitulo', 12, '2026-05-05 11:05:10'),
+(270, 1, 'lectura_capitulo', 13, '2026-05-05 11:05:23'),
+(271, 1, 'lectura_capitulo', 12, '2026-05-05 11:05:26'),
+(272, 1, 'lectura_capitulo', 12, '2026-05-05 11:05:40'),
+(273, 1, 'lectura_capitulo', 12, '2026-05-05 11:06:12'),
+(274, 1, 'lectura_capitulo', 12, '2026-05-05 19:25:00');
 
 -- --------------------------------------------------------
 
@@ -509,7 +519,8 @@ INSERT INTO `comentario_likes` (`id_like`, `usuario_id`, `comentario_id`, `fecha
 (3, 1, 1, '2026-05-01 17:49:18'),
 (6, 1, 10, '2026-05-01 18:53:17'),
 (7, 1, 8, '2026-05-03 17:33:37'),
-(8, 4, 16, '2026-05-04 14:09:46');
+(8, 4, 16, '2026-05-04 14:09:46'),
+(9, 1, 16, '2026-05-05 11:05:40');
 
 -- --------------------------------------------------------
 
@@ -655,7 +666,8 @@ INSERT INTO `mensajes` (`id_mensaje`, `chat_id`, `remitente_id`, `contenido`, `f
 (40, 3, 4, 'Cuak', '2026-05-01 20:17:21', NULL, 'texto'),
 (41, 1, 1, 'Hola', '2026-05-02 14:46:47', NULL, 'texto'),
 (42, 1, 1, '', '2026-05-02 16:02:04', 'img/uploads/chat/chat_69f61ffc4e1af8.25690891.jpg', 'imagen'),
-(43, 1, 1, 'Con un libro', '2026-05-02 16:02:41', 'img/uploads/chat/chat_69f62021aa78a9.16049694.jpg', 'imagen');
+(43, 1, 1, 'Con un libro', '2026-05-02 16:02:41', 'img/uploads/chat/chat_69f62021aa78a9.16049694.jpg', 'imagen'),
+(44, 1, 1, 'Hola', '2026-05-05 11:03:01', NULL, 'texto');
 
 -- --------------------------------------------------------
 
@@ -687,47 +699,29 @@ INSERT INTO `notificaciones` (`id_notificaciones`, `usuario_id`, `mensaje`, `url
 (49, 2, 'Tu libro \'La Ciudad Bajo las Estrellas\' ha recibido un nuevo comentario.', 'leer.php?id=2', 1, '2026-05-01 19:06:02'),
 (50, 2, 'Tu libro \'La Ciudad Bajo las Estrellas\' ha recibido un nuevo comentario.', 'leer.php?id=2', 1, '2026-05-01 19:06:21'),
 (51, 4, 'Tu libro \'El triste pato\' ha sido comprado.', 'perfil.php?user_id=4', 0, '2026-05-01 19:13:32'),
-(52, 1, 'Nuevo mensaje de Alba.', 'chat.php?user_id=2', 1, '2026-05-01 20:13:07'),
-(53, 1, 'Nuevo mensaje de Alba.', 'chat.php?user_id=2', 1, '2026-05-01 20:13:16'),
-(54, 1, 'Nuevo mensaje de Alba.', 'chat.php?user_id=2', 1, '2026-05-01 20:13:25'),
-(55, 1, 'Nuevo mensaje de Alba.', 'chat.php?user_id=2', 1, '2026-05-01 20:13:47'),
-(56, 1, 'Nuevo mensaje de Pato.', 'chat.php?user_id=4', 1, '2026-05-01 20:14:33'),
-(57, 1, 'Nuevo mensaje de Pato.', 'chat.php?user_id=4', 1, '2026-05-01 20:14:36'),
-(58, 1, 'Nuevo mensaje de Pato.', 'chat.php?user_id=4', 1, '2026-05-01 20:14:39'),
-(59, 1, 'Nuevo mensaje de Pato.', 'chat.php?user_id=4', 1, '2026-05-01 20:14:42'),
 (76, 4, 'Tu libro \'El triste pato\' ha sido comprado.', 'perfil.php?user_id=4', 0, '2026-05-02 14:38:26'),
-(77, 1, 'El usuario admin ya te sigue.', 'perfil.php?user_id=1', 1, '2026-05-02 14:40:44'),
 (78, 2, 'El usuario admin ya te sigue.', 'perfil.php?user_id=1', 0, '2026-05-02 14:46:35'),
 (79, 2, 'Nuevo mensaje de admin.', 'chat.php?user_id=1', 0, '2026-05-02 14:46:47'),
 (80, 2, 'Nuevo mensaje de admin.', 'chat.php?user_id=1', 0, '2026-05-02 16:02:04'),
 (81, 2, 'Nuevo mensaje de admin.', 'chat.php?user_id=1', 0, '2026-05-02 16:02:41'),
 (82, 3, 'El autor Alba ha publicado un nuevo libro: Contra el Mundo.', 'catalogo.php?search=Contra+el+Mundo', 0, '2026-05-04 13:50:21'),
-(83, 1, 'El autor Alba ha publicado un nuevo libro: Contra el Mundo.', 'catalogo.php?search=Contra+el+Mundo', 0, '2026-05-04 13:50:21'),
 (85, 3, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=12', 0, '2026-05-04 13:54:28'),
-(86, 1, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=12', 0, '2026-05-04 13:54:28'),
 (88, 3, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=13', 0, '2026-05-04 13:55:10'),
-(89, 1, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=13', 0, '2026-05-04 13:55:10'),
 (91, 3, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=14', 0, '2026-05-04 13:57:36'),
-(92, 1, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=14', 0, '2026-05-04 13:57:36'),
 (94, 3, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=15', 0, '2026-05-04 13:59:23'),
-(95, 1, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=15', 0, '2026-05-04 13:59:23'),
 (97, 3, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=16', 0, '2026-05-04 14:00:09'),
-(98, 1, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=16', 0, '2026-05-04 14:00:09'),
 (100, 3, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=17', 0, '2026-05-04 14:00:45'),
-(101, 1, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=17', 0, '2026-05-04 14:00:45'),
 (103, 3, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=18', 0, '2026-05-04 14:01:30'),
-(104, 1, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=18', 0, '2026-05-04 14:01:30'),
 (106, 3, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=19', 0, '2026-05-04 14:02:16'),
-(107, 1, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=19', 0, '2026-05-04 14:02:16'),
 (109, 3, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=20', 0, '2026-05-04 14:03:35'),
-(110, 1, 'Tu autor seguido ha publicado un nuevo capítulo en Contra el Mundo.', 'leer.php?id=20', 0, '2026-05-04 14:03:35'),
 (112, 3, 'El libro \'Contra el Mundo\' ha sido actualizado.', 'leer.php?id=12', 0, '2026-05-04 14:03:57'),
-(113, 1, 'El libro \'Contra el Mundo\' ha sido actualizado.', 'leer.php?id=12', 0, '2026-05-04 14:03:57'),
 (114, 2, 'Tu libro \'Contra el Mundo\' ha recibido un nuevo comentario.', 'leer.php?id=12', 0, '2026-05-04 14:06:58'),
 (115, 2, 'Tu libro \'Contra el Mundo\' ha recibido un nuevo comentario.', 'leer.php?id=12', 0, '2026-05-04 14:07:29'),
 (116, 2, 'Tu libro \'Contra el Mundo\' ha recibido un nuevo comentario.', 'leer.php?id=12', 0, '2026-05-04 14:07:57'),
 (117, 2, 'Tu libro \'Contra el Mundo\' ha recibido un nuevo comentario.', 'leer.php?id=12', 0, '2026-05-04 14:08:10'),
-(118, 2, 'Tu libro \'Contra el Mundo\' ha recibido un nuevo comentario.', 'leer.php?id=12', 0, '2026-05-04 14:08:15');
+(118, 2, 'Tu libro \'Contra el Mundo\' ha recibido un nuevo comentario.', 'leer.php?id=12', 0, '2026-05-04 14:08:15'),
+(119, 2, 'El usuario admin ya te sigue.', 'perfil.php?user_id=1', 0, '2026-05-05 11:02:47'),
+(120, 2, 'Nuevo mensaje de admin.', 'chat.php?user_id=1', 0, '2026-05-05 11:03:01');
 
 -- --------------------------------------------------------
 
@@ -750,7 +744,7 @@ INSERT INTO `seguidores` (`id_seguidores`, `seguidor_id`, `seguido_id`, `fecha_s
 (7, 3, 2, '2026-05-01 13:25:16'),
 (13, 1, 4, '2026-05-01 17:54:31'),
 (18, 4, 1, '2026-05-01 20:17:28'),
-(20, 1, 2, '2026-05-02 14:46:35');
+(21, 1, 2, '2026-05-05 11:02:47');
 
 -- --------------------------------------------------------
 
@@ -809,7 +803,8 @@ INSERT INTO `transacciones` (`id_transaccion`, `usuario_id`, `tipo`, `referencia
 (11, 1, 'recarga', NULL, 1.00, '2026-05-01 18:14:48'),
 (13, 1, 'recarga', NULL, 20.00, '2026-05-02 14:37:48'),
 (14, 1, 'libro', 7, 3.99, '2026-05-02 14:38:26'),
-(15, 2, 'recarga', NULL, 20.00, '2026-05-04 14:35:41');
+(15, 2, 'recarga', NULL, 20.00, '2026-05-04 14:35:41'),
+(16, 1, 'recarga', NULL, 1.00, '2026-05-05 11:08:07');
 
 -- --------------------------------------------------------
 
@@ -834,7 +829,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuarios`, `nombre`, `email`, `password`, `avatar`, `bio`, `activo`, `fecha_registro`, `monedas`) VALUES
-(1, 'admin', 'admin@demo.com', '$2y$10$XK1Z7miTnmbIs453QLZ8gO7.zraoOg/oKX1fur1XwUjcQ99yZMkSm', 'img/uploads/avatars/avatar_69f3d4d53d5741.69726126.jpeg', 'Está es un breve descripción', 1, '2026-04-30 22:06:50', 30.03),
+(1, 'admin', 'admin@demo.com', '$2y$10$XK1Z7miTnmbIs453QLZ8gO7.zraoOg/oKX1fur1XwUjcQ99yZMkSm', 'img/uploads/avatars/avatar_69f3d4d53d5741.69726126.jpeg', 'Está es un breve descripción', 1, '2026-04-30 22:06:50', 31.03),
 (2, 'Alba', 'alba@demo.com', '$2y$10$008CVAAVQYG.7NuCktLcFulrpvKs/ep/uW5RDbIck8cEXqBkhZKGy', 'img/uploads/avatars/avatar_69f503dc50c8b4.59856527.jpg', 'Amante de las historias que te abrazan y de los libros que te hacen viajar sin moverte del sitio. Siempre con un tomo nuevo entre manos y ganas de descubrir mundos mágicos.', 1, '2026-04-30 22:09:31', 20.00),
 (3, 'Usuario', 'user@demo.es', '$2y$10$q3LuQJKLwC2rE8qXq8lCzOcOkUzZ7cgf.HpiCZMTz2dhObpi/dL/6', NULL, NULL, 1, '2026-05-01 13:04:47', 0.00),
 (4, 'Pato', 'pato@demo.com', '$2y$10$yF0KkHaAjHBn.0rVwacaMuoGLnf3t.xO3cwmr3R66e4wY9yoFGkcm', NULL, NULL, 1, '2026-05-01 14:23:12', 0.00);
@@ -1022,7 +1017,7 @@ ALTER TABLE `valoraciones`
 -- AUTO_INCREMENT de la tabla `actividad`
 --
 ALTER TABLE `actividad`
-  MODIFY `id_actividad` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=265;
+  MODIFY `id_actividad` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=275;
 
 --
 -- AUTO_INCREMENT de la tabla `archivos`
@@ -1034,7 +1029,7 @@ ALTER TABLE `archivos`
 -- AUTO_INCREMENT de la tabla `bloqueos`
 --
 ALTER TABLE `bloqueos`
-  MODIFY `id_bloqueo` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id_bloqueo` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de la tabla `capitulos`
@@ -1070,7 +1065,7 @@ ALTER TABLE `comentarios`
 -- AUTO_INCREMENT de la tabla `comentario_likes`
 --
 ALTER TABLE `comentario_likes`
-  MODIFY `id_like` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_like` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT de la tabla `comunidad_mensajes`
@@ -1094,19 +1089,19 @@ ALTER TABLE `libros`
 -- AUTO_INCREMENT de la tabla `mensajes`
 --
 ALTER TABLE `mensajes`
-  MODIFY `id_mensaje` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `id_mensaje` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT de la tabla `notificaciones`
 --
 ALTER TABLE `notificaciones`
-  MODIFY `id_notificaciones` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=119;
+  MODIFY `id_notificaciones` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=121;
 
 --
 -- AUTO_INCREMENT de la tabla `seguidores`
 --
 ALTER TABLE `seguidores`
-  MODIFY `id_seguidores` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id_seguidores` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de la tabla `soporte`
@@ -1118,7 +1113,7 @@ ALTER TABLE `soporte`
 -- AUTO_INCREMENT de la tabla `transacciones`
 --
 ALTER TABLE `transacciones`
-  MODIFY `id_transaccion` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id_transaccion` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
