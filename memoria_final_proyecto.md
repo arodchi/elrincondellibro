@@ -38,7 +38,7 @@
    5.5. [Seguridad y Mantenimiento Técnico](#seguridad-y-mantenimiento-técnico)  
    5.6. [Plan de Escalabilidad](#plan-de-escalabilidad)  
    5.7. [Pruebas](#pruebas)  
-   5.8. [Implementación](#implementación)  
+   5.8. [Planificación de Recursos y Cronograma](#planificación-de-recursos-y-cronograma)  
 6. [Manual de usuario](#manual-de-usuario)  
    6.1. [Introducción](#introducción-1)  
    6.2. [Gestión de Cuentas y Registro](#gestión-de-cuentas-y-registro)  
@@ -538,6 +538,115 @@ Los resultados de las pruebas mostraron que las principales funcionalidades del 
 - Consultas SQL con parámetros incorrectos.
 
 El sistema es estable para un despliegue de desarrollo, y los elementos críticos quedan identificados para futuras mejoras.
+
+#### 5.8. Planificación de Recursos y Cronograma
+
+##### 5.8.1. Fases del Proyecto
+
+El desarrollo de El Rincón del Libro se estructuró en 4 fases principales:
+
+1. **Fase 1: Análisis y Diseño** (1-2 semanas)
+   - Definición de requisitos funcionales y no funcionales.
+   - Diseño de base de datos (modelo E/R).
+   - Diseño de interfaz de usuario.
+   - Creación de diagramas de arquitectura.
+
+2. **Fase 2: Desarrollo Backend y Frontend** (4-6 semanas)
+   - Creación de tablas y esquema de base de datos.
+   - Desarrollo de módulos de autenticación, gestión de libros, lectura, comunidad.
+   - Diseño y maquetación de interfaces HTML/CSS/JS.
+   - Integración frontend-backend.
+
+3. **Fase 3: Pruebas e Integración** (2-3 semanas)
+   - Pruebas unitarias de funciones críticas.
+   - Pruebas de integración entre módulos.
+   - Pruebas de aceptación del usuario.
+   - Corrección de bugs identificados.
+
+4. **Fase 4: Despliegue y Documentación** (1-2 semanas)
+   - Configuración de Docker y Docker Compose.
+   - Despliegue en entorno de desarrollo.
+   - Redacción de documentación técnica y de usuario.
+   - Preparación para presentación.
+
+**Duración total estimada:** 8-13 semanas
+
+##### 5.8.2. Cronograma Detallado
+
+| Fase | Actividades | Semanas | Hito |
+|------|-------------|---------|------|
+| 1 | Análisis, diseño, prototipado | 1-2 | Documentación de requisitos |
+| 2 | Desarrollo backend (50%) | 2-4 | DB y APIs funcionales |
+| 2 | Desarrollo frontend (50%) | 2-5 | Interfaces implementadas |
+| 2 | Integración y testing | 5-6 | Sistema funcional |
+| 3 | Correcciones y optimización | 6-8 | Bugs resueltos |
+| 4 | Documentación y despliegue | 8-10 | Proyecto finalizado |
+
+##### 5.8.3. Recursos Humanos
+
+Para el desarrollo de este proyecto, se requieren los siguientes roles:
+
+| Rol | Dedicación | Responsabilidades |
+|-----|-----------|-------------------|
+| **Desarrollador Full-Stack** | 100% | Backend (PHP/MySQL), frontend (HTML/CSS/JS), integración |
+| **QA/Tester** | 50% | Pruebas, reportes de bugs, validación de requisitos |
+| **Diseñador UX/UI** | 30% | Diseño de interfaz, maquetado, guía de estilos |
+| **DevOps/Infraestructura** | 20% | Configuración Docker, despliegue, mantenimiento |
+| **Project Manager** | 30% | Coordinación, seguimiento, comunicación |
+
+**Equipo mínimo:** 2 personas (Full-stack + QA)
+**Equipo recomendado:** 4-5 personas
+
+##### 5.8.4. Recursos Técnicos
+
+**Hardware:**
+- PC de desarrollo: CPU 4 núcleos, 8GB RAM, 50GB SSD libre
+- Servidor de producción (opcional): CPU 8 núcleos, 16GB RAM, 100GB SSD
+
+**Software:**
+- Docker Desktop (desarrollo)
+- Visual Studio Code con extensiones (PHP, MySQL, Docker)
+- Git para control de versiones
+- phpMyAdmin para gestión de BD
+- Navegadores modernos para testing
+
+**Almacenamiento:**
+- Repositorio Git (GitHub, GitLab, etc.)
+- Base de datos MySQL 8.0+
+- Sistema de archivos para uploads de imágenes
+
+**Conexión:**
+- Internet estable para descargas y actualizaciones
+- Ancho de banda: 100 Mbps mínimo
+
+##### 5.8.5. Herramientas y Tecnologías
+
+| Categoría | Herramienta | Uso |
+|-----------|-----------|-----|
+| **Programación** | PHP 8.1+ | Backend |
+| | HTML5/CSS3 | Frontend |
+| | JavaScript | Interactividad |
+| **Base de Datos** | MySQL 8.0 | Almacenamiento |
+| **Contenedorización** | Docker | Empaquetamiento |
+| | Docker Compose | Orquestación |
+| **Control de versiones** | Git | Gestión de cambios |
+| **Diseño** | Figma | Prototipado (opcional) |
+| **Testing** | PHPUnit | Pruebas unitarias |
+| | Postman | Testing de APIs |
+| **Documentación** | Markdown | Documentación técnica |
+| | MkDocs | Generación de docs |
+
+##### 5.8.6. Gestión de Riesgos
+
+**Riesgos identificados:**
+
+| Riesgo | Probabilidad | Impacto | Mitigación |
+|--------|-------------|--------|-----------|
+| Retrasos en desarrollo | Media | Alto | Usar metodología ágil, sprints de 1 semana |
+| Bugs críticos encontrados tarde | Baja | Alto | Pruebas automatizadas desde fase 2 |
+| Cambios en requisitos | Media | Medio | Documentar cambios, revisar con stakeholders |
+| Problemas de performance | Baja | Medio | Profiling y optimización en fase 3 |
+| Indisponibilidad de herramientas | Muy baja | Bajo | Alternativas preparadas (IDE, hosting) |
 
 ## 6. Manual de usuario
 
