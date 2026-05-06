@@ -630,7 +630,7 @@ Para el desarrollo de este proyecto, se requieren los siguientes roles:
 | **Contenedorización** | Docker | Empaquetamiento |
 | | Docker Compose | Orquestación |
 | **Control de versiones** | Git | Gestión de cambios |
-| **Diseño** | Figma | Prototipado (opcional) |
+| **Diseño** | Figma | Prototipado |
 | **Testing** | PHPUnit | Pruebas unitarias |
 | | Postman | Testing de APIs |
 | **Documentación** | Markdown | Documentación técnica |
