@@ -4,7 +4,7 @@
 
 **Título del Proyecto:** El Rincón del Libro  
 **Autor:** Alba Rodríguez Chito  
-**Fecha:** 06/05/2026  
+**Fecha:** 11/05/2026  
 **Centro:** I.E.S. Kursaal  
 **Grado:** Desarrollo de Aplicaciones Web  
 
