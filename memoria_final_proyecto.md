@@ -377,7 +377,8 @@ Principales tablas:
 
 Además de las tablas principales, la base de datos puede contener tablas auxiliares para favoritos, bloqueos, historiales y configuraciones de usuario.
 
-<img width="1408" height="768" alt="Diagrama de Entidad–Relación" src="https://github.com/user-attachments/assets/61a71671-33bb-44ce-b1ed-38e3e56b09fc" />
+<img width="1536" height="1024" alt="Diagrama Entidad–Relación" src="https://github.com/user-attachments/assets/e6fefc99-8ab5-4482-8228-35c6a337132d" />
+
 
 ### 5. Manual técnico
 
